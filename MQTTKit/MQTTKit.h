@@ -7,6 +7,8 @@
 //  Copyright 2012 Nicholas Humfrey. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 typedef enum MQTTConnectionReturnCode : NSUInteger {
     ConnectionAccepted,
     ConnectionRefusedUnacceptableProtocolVersion,
