@@ -9,20 +9,20 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum MQTTConnectionReturnCode : NSUInteger {
+typedef NS_ENUM(NSUInteger, MQTTConnectionReturnCode) {
     ConnectionAccepted,
     ConnectionRefusedUnacceptableProtocolVersion,
     ConnectionRefusedIdentiferRejected,
     ConnectionRefusedServerUnavailable,
     ConnectionRefusedBadUserNameOrPassword,
     ConnectionRefusedNotAuthorized
-} MQTTConnectionReturnCode;
+};
 
-typedef enum MQTTQualityOfService : NSUInteger {
+typedef NS_ENUM(NSUInteger, MQTTQualityOfService) {
     AtMostOnce,
     AtLeastOnce,
     ExactlyOnce
-} MQTTQualityOfService;
+};
 
 #pragma mark - MQTT Message
 

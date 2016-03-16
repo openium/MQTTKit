@@ -34,11 +34,11 @@
 
 @implementation MQTTMessage
 
--(id)initWithTopic:(NSString *)topic
-           payload:(NSData *)payload
-               qos:(MQTTQualityOfService)qos
-            retain:(BOOL)retained
-               mid:(short)mid
+-(instancetype)initWithTopic:(NSString *)topic
+                     payload:(NSData *)payload
+                         qos:(MQTTQualityOfService)qos
+                      retain:(BOOL)retained
+                         mid:(short)mid
 {
     if ((self = [super init])) {
         self.topic = topic;
